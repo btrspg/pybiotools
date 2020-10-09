@@ -7,24 +7,33 @@ entries:
 - folders:
   - folderitems:
     - output: web,pdf
-      title: Export to modules
-      url: /export.html
+      title: Overview
+      url: /
     - output: web,pdf
-      title: Convert to html
-      url: /export2html.html
+      title: base
+      url: /base
     - output: web,pdf
-      title: Show doc
-      url: /showdoc.html
+      title: fastp
+      url: /fastp
     - output: web,pdf
-      title: Test functions
-      url: /test.html
+      title: fastqc
+      url: /fastqc
     - output: web,pdf
-      title: Core functions
-      url: /core.html
+      title: STAR
+      url: /star
     - output: web,pdf
-      title: Command line functions
-      url: /cli.html
+      title: hisat2
+      url: /hisat2
+    - output: web,pdf
+      title: samtools
+      url: /samtools
+    - output: web,pdf
+      title: stringtie
+      url: /stringtie
+    - output: web,pdf
+      title: featurecounts
+      url: /featurecounts
     output: web
-    title: Notebook
+    title: pybiotools
   output: web
   title: Sidebar

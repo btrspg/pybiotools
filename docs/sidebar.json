@@ -1,10 +1,13 @@
 {
-  "Notebook": {
-    "Export to modules": "/export",
-    "Convert to html": "/export2html",
-    "Show doc": "/showdoc",
-    "Test functions": "/test",
-    "Core functions": "/core",
-    "Command line functions": "/cli"
+  "pybiotools": {
+    "Overview": "/",
+    "base": "/base",
+    "fastp": "/fastp",
+    "fastqc": "/fastqc",
+    "STAR": "/star",
+    "hisat2": "/hisat2",
+    "samtools": "/samtools",
+    "stringtie": "/stringtie",
+    "featurecounts": "/featurecounts"
   }
 }
