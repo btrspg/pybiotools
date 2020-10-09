@@ -1,24 +1,26 @@
-# Project name here
-> Summary description here.
+# pybiotools
+> Command tools in bioinformatics analysis wrapper in this python package, with default parameters and could be specify in specific analysis.
 
 
-This file will become your README and also the index of your documentation.
+TODO.
 
 ## Install
 
-`pip install your_project_name`
+`pip install pybiotools`
 
-## How to use
+## Tools included
 
-Fill me in please! Don't forget code examples:
-
-```
-1+1
-```
+### fastp
 
 
+### fastqc
 
+### STAR
 
-    2
+### hisat2
 
+### samtools
 
+### stringtie
+
+### featurecounts

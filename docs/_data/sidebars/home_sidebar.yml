@@ -30,6 +30,9 @@ entries:
     - output: web,pdf
       title: stringtie
       url: /stringtie
+    - output: web,pdf
+      title: featurecounts
+      url: /featurecounts
     output: web
     title: pybiotools
   output: web

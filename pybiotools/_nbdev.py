@@ -9,7 +9,8 @@ index = {"Base": "00_base.ipynb",
          "Star": "03_star.ipynb",
          "Hisat2": "04_hisat2.ipynb",
          "Samtools": "05_samtools.ipynb",
-         "Stringtie": "06_stringtie.ipynb"}
+         "Stringtie": "06_stringtie.ipynb",
+         "Featurecounts": "07_featurecounts.ipynb"}
 
 modules = ["base.py",
            "softwares/fastq/fastp.py",
@@ -17,7 +18,8 @@ modules = ["base.py",
            "softwares/fastq/star.py",
            "softwares/fastq/hisat2.py",
            "softwares/bam/samtools.py",
-           "softwares/bam/stringtie.py"]
+           "softwares/bam/stringtie.py",
+           "softwares/bam/featurecounts.py"]
 
 doc_url = "https://btrspg.github.io/pybiotools/"
 
