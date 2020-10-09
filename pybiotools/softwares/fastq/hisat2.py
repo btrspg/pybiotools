@@ -4,7 +4,7 @@ __all__ = ['Hisat2']
 
 # Cell
 
-from ...base import Base,modify_cmd
+from ..base import Base, modify_cmd
 import os
 
 # Cell

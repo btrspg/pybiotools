@@ -4,7 +4,7 @@ __all__ = ['Star']
 
 # Cell
 
-from ...base import Base,modify_cmd
+from ..base import Base, modify_cmd
 
 
 # Cell

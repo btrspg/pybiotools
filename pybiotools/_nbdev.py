@@ -12,7 +12,7 @@ index = {"Base": "00_base.ipynb",
          "Stringtie": "06_stringtie.ipynb",
          "Featurecounts": "07_featurecounts.ipynb"}
 
-modules = ["base.py",
+modules = ["softwares/base.py",
            "softwares/fastq/fastp.py",
            "softwares/fastq/fastqc.py",
            "softwares/fastq/star.py",
