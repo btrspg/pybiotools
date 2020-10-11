@@ -4,10 +4,21 @@ __all__ = ['load_config', 'config']
 
 # Cell
 
+import pkg_resources
+import configparser
+
+# Cell
+
 def load_config(*configs):
     config = configparser.ConfigParser()
     config.read(configs)
     return config
 
-def config(new_config):
-    return load_config(pkg_resources.resource_filename('pybiotools','default.ini'),new_config)
+def config(new_config=None):
+    default_config=pkg_resources.resource_filename('pybiotools','default.ini')
+    if None is new_config:
+        print('loading default_config['+default_config+']')
+        return load_config(default_config)
+    else:
+        print('loading default_config and '+ new_config)
+        return load_config(pkg_resources.resource_filename('pybiotools','default.ini'),new_config)

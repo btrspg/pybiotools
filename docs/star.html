@@ -194,13 +194,11 @@ sidebar: home_sidebar
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>
-STAR --runThreadN 16 --runMode genomeGenerate \
+<pre>STAR --runThreadN 16 --runMode genomeGenerate \
         --genomeDir ./pybiotools/star_index \
         --genomeFastaFiles biology-test-data/fasta/Homo_sapiens.GRCh38.dna.primary_assembly.chromosome22.fa \
         --sjdbGTFfile biology-test-data/gtf/HS.22.gtf \
-        --sjdbOverhang 99        
-        
+        --sjdbOverhang 99
 </pre>
 </div>
 </div>
@@ -218,8 +216,7 @@ STAR --runThreadN 16 --runMode genomeGenerate \
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">star</span><span class="o">.</span><span class="n">cmd_align</span><span class="p">(</span><span class="n">star_index_dir</span><span class="p">,</span> <span class="n">fq1</span><span class="p">,</span> <span class="n">fq2</span><span class="p">,</span> <span class="n">prefix</span><span class="p">,</span> <span class="n">gtf</span><span class="p">,</span> <span class="n">read_length</span><span class="p">,</span><span class="n">sampleid</span><span class="o">=</span><span class="s1">&#39;RNA&#39;</span><span class="p">,</span>
-                  <span class="n">lane</span><span class="o">=</span><span class="s1">&#39;L1&#39;</span><span class="p">,</span> <span class="n">platform</span><span class="o">=</span><span class="s1">&#39;Illumina&#39;</span><span class="p">,</span> <span class="n">miRNA</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">star</span><span class="o">.</span><span class="n">cmd_align</span><span class="p">(</span><span class="n">star_index_dir</span><span class="p">,</span> <span class="n">fq1</span><span class="p">,</span> <span class="n">fq2</span><span class="p">,</span> <span class="n">prefix</span><span class="p">,</span> <span class="n">gtf</span><span class="p">,</span> <span class="n">read_length</span><span class="p">,</span><span class="n">miRNA</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -232,8 +229,7 @@ STAR --runThreadN 16 --runMode genomeGenerate \
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>
-STAR --runThreadN 16 \
+<pre>STAR --runThreadN 16 \
 --outSAMstrandField intronMotif \
 --readFilesCommand zcat \
 --outSAMtype BAM SortedByCoordinate \
@@ -242,8 +238,6 @@ STAR --runThreadN 16 \
     --outFileNamePrefix ./pybiotools/HS_22 \
     --sjdbGTFfile biology-test-data/gtf/HS.22.gtf  \
     --sjdbOverhang 99  \
-    --outSAMattrRGline &#34;ID:RNA LB:RNA SM:RNA PL:Illumina PU:Illumina&#34;      
-            
 </pre>
 </div>
 </div>
@@ -261,8 +255,7 @@ STAR --runThreadN 16 \
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">star</span><span class="o">.</span><span class="n">cmd_align</span><span class="p">(</span><span class="n">star_index_dir</span><span class="p">,</span> <span class="n">fq1</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">+</span><span class="s1">&#39;_mirna&#39;</span><span class="p">,</span> <span class="n">gtf</span><span class="p">,</span> <span class="n">read_length</span><span class="p">,</span><span class="n">sampleid</span><span class="o">=</span><span class="s1">&#39;RNA&#39;</span><span class="p">,</span>
-                  <span class="n">lane</span><span class="o">=</span><span class="s1">&#39;L1&#39;</span><span class="p">,</span> <span class="n">platform</span><span class="o">=</span><span class="s1">&#39;Illumina&#39;</span><span class="p">,</span> <span class="n">miRNA</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">star</span><span class="o">.</span><span class="n">cmd_align</span><span class="p">(</span><span class="n">star_index_dir</span><span class="p">,</span> <span class="n">fq1</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">prefix</span><span class="o">+</span><span class="s1">&#39;_mirna&#39;</span><span class="p">,</span> <span class="n">gtf</span><span class="p">,</span> <span class="n">read_length</span><span class="p">,</span><span class="n">miRNA</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -275,8 +268,7 @@ STAR --runThreadN 16 \
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>
-STAR --runThreadN 16 \
+<pre>STAR --runThreadN 16 \
 --outSAMstrandField intronMotif \
 --readFilesCommand zcat \
 --outSAMtype BAM SortedByCoordinate \
@@ -299,8 +291,6 @@ STAR --runThreadN 16 \
 --outWigType wiggle \
 --outWigStrand Stranded \
 --outWigNorm RPM \
-    --outSAMattrRGline &#34;ID:RNA LB:RNA SM:RNA PL:Illumina PU:Illumina&#34;      
-            
 </pre>
 </div>
 </div>

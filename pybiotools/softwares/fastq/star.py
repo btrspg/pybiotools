@@ -42,8 +42,7 @@ class Star(Base):
         )
 
     @modify_cmd
-    def cmd_align(self, star_idx, fq1, fq2, prefix, gtf, read_length,sampleid='RNA',
-                  lane='L1', platform='Illumina', miRNA=False):
+    def cmd_align(self, star_idx, fq1, fq2, prefix, gtf, read_length, miRNA=False):
         '''
         :param star_idx:
         :param fq1:
@@ -63,8 +62,7 @@ class Star(Base):
     --readFilesIn {fq1} {fq2} \
     --outFileNamePrefix {prefix} \
     --sjdbGTFfile {gtf}  \
-    --sjdbOverhang {read_length} {mp} \
-    --outSAMattrRGline "ID:RNA LB:{sampleid} SM:{sampleid} PL:{platform} PU:{platform}"
+    --sjdbOverhang {read_length} {mp}
             '''.format(
             star=self._software,
             align_paras=self._default['align'],

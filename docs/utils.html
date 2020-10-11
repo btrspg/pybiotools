@@ -30,17 +30,6 @@ sidebar: home_sidebar
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pkg_resources</span>
-<span class="kn">import</span> <span class="nn">configparser</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
 
 </div>
     {% endraw %}
@@ -63,7 +52,7 @@ sidebar: home_sidebar
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="load_config" class="doc_header"><code>load_config</code><a href="https://github.com/btrspg/pybiotools/tree/master/pybiotools/utils.py#L7" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>load_config</code>(<strong>*<code>configs</code></strong>)</p>
+<h4 id="load_config" class="doc_header"><code>load_config</code><a href="https://github.com/btrspg/pybiotools/tree/master/pybiotools/utils.py#L12" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>load_config</code>(<strong>*<code>configs</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -87,7 +76,7 @@ sidebar: home_sidebar
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="config" class="doc_header"><code>config</code><a href="https://github.com/btrspg/pybiotools/tree/master/pybiotools/utils.py#L12" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>config</code>(<strong><code>new_config</code></strong>)</p>
+<h4 id="config" class="doc_header"><code>config</code><a href="https://github.com/btrspg/pybiotools/tree/master/pybiotools/utils.py#L17" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>config</code>(<strong><code>new_config</code></strong>=<em><code>None</code></em>)</p>
 </blockquote>
 
 </div>
@@ -140,7 +129,7 @@ sidebar: home_sidebar
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="n">config</span><span class="p">(</span><span class="s1">&#39;test.ini&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="n">config</span><span class="p">(</span><span class="s1">&#39;tests/test.ini&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">items</span><span class="p">(</span><span class="s1">&#39;software&#39;</span><span class="p">))</span>
 </pre></div>
 
@@ -155,6 +144,38 @@ sidebar: home_sidebar
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[(&#39;fastp&#39;, &#39;/path/to/fastp&#39;), (&#39;mkdir&#39;, &#39;mkdir&#39;), (&#39;fastqc&#39;, &#39;fastqc&#39;), (&#39;star&#39;, &#39;STAR&#39;), (&#39;hisat2&#39;, &#39;hisat2&#39;), (&#39;samtools&#39;, &#39;samtools&#39;), (&#39;stringtie&#39;, &#39;stringtie&#39;), (&#39;featurecounts&#39;, &#39;featureCounts&#39;)]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="n">config</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">items</span><span class="p">(</span><span class="s1">&#39;software&#39;</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[(&#39;fastp&#39;, &#39;fastp&#39;), (&#39;mkdir&#39;, &#39;mkdir&#39;), (&#39;fastqc&#39;, &#39;fastqc&#39;), (&#39;star&#39;, &#39;STAR&#39;), (&#39;hisat2&#39;, &#39;hisat2&#39;), (&#39;samtools&#39;, &#39;samtools&#39;), (&#39;stringtie&#39;, &#39;stringtie&#39;), (&#39;featurecounts&#39;, &#39;featureCounts&#39;)]
 </pre>
 </div>
 </div>
