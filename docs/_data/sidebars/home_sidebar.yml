@@ -34,6 +34,12 @@ entries:
       title: featurecounts
       url: /featurecounts
     - output: web,pdf
+      title: inhouserscript
+      url: /inhouse_rscript
+    - output: web,pdf
+      title: bitk
+      url: /bitk
+    - output: web,pdf
       title: utils
       url: /utils
     output: web

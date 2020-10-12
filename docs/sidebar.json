@@ -9,6 +9,8 @@
     "samtools": "/samtools",
     "stringtie": "/stringtie",
     "featurecounts": "/featurecounts",
+    "inhouserscript": "/inhouse_rscript",
+    "bitk": "/bitk",
     "utils": "/utils"
   }
 }

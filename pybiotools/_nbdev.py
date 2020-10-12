@@ -11,6 +11,8 @@ index = {"Base": "00_base.ipynb",
          "Samtools": "05_samtools.ipynb",
          "Stringtie": "06_stringtie.ipynb",
          "Featurecounts": "07_featurecounts.ipynb",
+         "Inhouerscript": "08_inhouse_rscript.ipynb",
+         "Bitk": "09_bitk.ipynb",
          "load_config": "utils.ipynb",
          "config": "utils.ipynb"}
 
@@ -22,6 +24,8 @@ modules = ["softwares/base.py",
            "softwares/bam/samtools.py",
            "softwares/bam/stringtie.py",
            "softwares/bam/featurecounts.py",
+           "softwares/inhouse/r.py",
+           "softwares/inhouse/bitk.py",
            "utils.py"]
 
 doc_url = "https://btrspg.github.io/pybiotools/"
