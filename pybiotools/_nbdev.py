@@ -13,6 +13,7 @@ index = {"Base": "00_base.ipynb",
          "Featurecounts": "07_featurecounts.ipynb",
          "Inhouerscript": "08_inhouse_rscript.ipynb",
          "Bitk": "09_bitk.ipynb",
+         "Rnasamba": "10_rnasamba.ipynb",
          "load_config": "utils.ipynb",
          "config": "utils.ipynb"}
 
@@ -26,6 +27,7 @@ modules = ["softwares/base.py",
            "softwares/bam/featurecounts.py",
            "softwares/inhouse/r.py",
            "softwares/inhouse/bitk.py",
+           "softwares/fasta/rnasamba.py",
            "utils.py"]
 
 doc_url = "https://btrspg.github.io/pybiotools/"

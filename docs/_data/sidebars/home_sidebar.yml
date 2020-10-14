@@ -40,6 +40,9 @@ entries:
       title: bitk
       url: /bitk
     - output: web,pdf
+      title: rnasamba
+      url: /rnasamba
+    - output: web,pdf
       title: utils
       url: /utils
     output: web

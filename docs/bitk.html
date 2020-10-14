@@ -84,7 +84,11 @@ sidebar: home_sidebar
 <span class="n">sample_title</span><span class="o">=</span><span class="s1">&#39;sample&#39;</span>
 <span class="n">bam_title</span><span class="o">=</span><span class="s1">&#39;starbam&#39;</span>
 <span class="n">count_title</span><span class="o">=</span><span class="s1">&#39;gene_name&#39;</span>
-
+<span class="n">featurecounts_file</span><span class="o">=</span><span class="s1">&#39;featurecount.txt&#39;</span>
+<span class="n">deseq2_file</span><span class="o">=</span><span class="s1">&#39;deseq2.csv&#39;</span>
+<span class="n">output</span><span class="o">=</span><span class="s1">&#39;output.csv&#39;</span>
+<span class="n">key_in_fc</span><span class="o">=</span><span class="s1">&#39;Geneid&#39;</span>
+<span class="n">key_in_deseq2</span><span class="o">=</span><span class="s1">&#39;Uname: 0&#39;</span>
 <span class="n">count</span><span class="o">=</span><span class="s1">&#39;tests/count.txt&#39;</span>
 <span class="n">size</span><span class="o">=</span><span class="s1">&#39;info1&#39;</span>
 <span class="n">style</span><span class="o">=</span><span class="s1">&#39;info2&#39;</span>
@@ -261,6 +265,40 @@ In-house python package, https://github.com/btrspg/bitk.git
 --assess-method silhouette_score \
 --dimensions 3 \
 -r
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">bitk</span><span class="o">.</span><span class="n">cmd_merge_fc_deseq2</span><span class="p">(</span><span class="n">featurecounts_file</span><span class="p">,</span><span class="n">deseq2_file</span><span class="p">,</span><span class="n">output</span><span class="p">,</span><span class="n">key_in_fc</span><span class="p">,</span><span class="n">key_in_deseq2</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>merge_fc_deseq2.py \
+    --key-in-fc &#39;Geneid&#39; \
+    --key-in-deseq2 &#39;Uname: 0&#39; \
+    featurecount.txt deseq2.csv output.csv
 </pre>
 </div>
 </div>

@@ -4,7 +4,7 @@ __all__ = ['Bitk']
 
 # Cell
 
-
+import os
 from ..base import Base, modify_cmd
 
 
@@ -21,7 +21,7 @@ class Bitk(Base):
             bin = ''
         self._dedim = bin + 'dedim.py'
         self._fc_rename = bin + 'fc_rename.py'
-
+        self._merge_fc_deseq2 = bin + 'merge_fc_deseq2.py'
 
 
     def cmd_version(self):
@@ -61,6 +61,18 @@ class Bitk(Base):
         -c {count_title}
         '''.format(
             software=self._fc_rename,
+            **locals()
+        )
+
+    @modify_cmd
+    def cmd_merge_fc_deseq2(self,featurecounts_file,deseq2_file,output,key_in_fc,key_in_deseq2):
+        return r'''
+ {software} \
+    --key-in-fc '{key_in_fc}' \
+    --key-in-deseq2 '{key_in_deseq2}' \
+    {featurecounts_file} {deseq2_file} {output}
+        '''.format(
+            software=self._merge_fc_deseq2,
             **locals()
         )
 
