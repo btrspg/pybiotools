@@ -43,6 +43,9 @@ entries:
       title: rnasamba
       url: /rnasamba
     - output: web,pdf
+      title: gffread
+      url: /gffread
+    - output: web,pdf
       title: utils
       url: /utils
     output: web

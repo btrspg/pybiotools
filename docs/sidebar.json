@@ -12,6 +12,7 @@
     "inhouserscript": "/inhouse_rscript",
     "bitk": "/bitk",
     "rnasamba": "/rnasamba",
+    "gffread": "/gffread",
     "utils": "/utils"
   }
 }
