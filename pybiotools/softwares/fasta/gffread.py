@@ -23,23 +23,21 @@ class Gffread(Base):
         )
 
     @modify_cmd
-    def cmd_extract_fasta(self, output_file, coding_file, noncoding_file):
+    def cmd_extract_fasta(self, gtf, reference, output):
         '''
 
-        :param output_file:
-        :param coding_file:
-        :param noncoding_file:
+        :param gtf:
+        :param reference:
+        :param output:
         :return:
         '''
-
-
         return r'''
 {software} {para} \
         {gtf} \
         -g {reference} \
         -w {output}
             '''.format(
-                train_para=self._default['train'],
+                para=self._default['gtf2fasta'],
                 software=self._software,
                 **locals()
             )
