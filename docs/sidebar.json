@@ -13,6 +13,8 @@
     "bitk": "/bitk",
     "rnasamba": "/rnasamba",
     "gffread": "/gffread",
+    "minimap2": "/minimap2",
+    "gffcompare": "/gffcompare",
     "utils": "/utils"
   }
 }

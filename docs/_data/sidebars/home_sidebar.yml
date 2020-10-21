@@ -46,6 +46,12 @@ entries:
       title: gffread
       url: /gffread
     - output: web,pdf
+      title: minimap2
+      url: /minimap2
+    - output: web,pdf
+      title: gffcompare
+      url: /gffcompare
+    - output: web,pdf
       title: utils
       url: /utils
     output: web
