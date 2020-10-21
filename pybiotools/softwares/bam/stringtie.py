@@ -68,7 +68,6 @@ class Stringtie(Base):
             stringtie=self._software,
             gtfs=gtfs if isinstance(gtfs, str) else ' '.join(gtfs),
             merge_paras=self._default['merge'],
-            nt=self._default.nt if None is nt else nt,
             output=output,
             tag=tag
 
