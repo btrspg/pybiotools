@@ -52,6 +52,9 @@ entries:
       title: gffcompare
       url: /gffcompare
     - output: web,pdf
+      title: kallisto
+      url: /kallisto
+    - output: web,pdf
       title: utils
       url: /utils
     output: web

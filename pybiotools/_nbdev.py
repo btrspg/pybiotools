@@ -17,6 +17,7 @@ index = {"Base": "00_base.ipynb",
          "Gffread": "11_gffread.ipynb",
          "Minimap2": "12_minimap2.ipynb",
          "Gffcompare": "13_gffcompare.ipynb",
+         "Kallisto": "14_kallisto.ipynb",
          "load_config": "utils.ipynb",
          "config": "utils.ipynb"}
 
@@ -34,6 +35,7 @@ modules = ["softwares/base.py",
            "softwares/fasta/gffread.py",
            "softwares/fastq/minimap2.py",
            "softwares/gtf/gffcompare.py",
+           "softwares/fastq/kallisto.py",
            "utils.py"]
 
 doc_url = "https://btrspg.github.io/pybiotools/"

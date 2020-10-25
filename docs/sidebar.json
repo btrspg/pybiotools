@@ -15,6 +15,7 @@
     "gffread": "/gffread",
     "minimap2": "/minimap2",
     "gffcompare": "/gffcompare",
+    "kallisto": "/kallisto",
     "utils": "/utils"
   }
 }
