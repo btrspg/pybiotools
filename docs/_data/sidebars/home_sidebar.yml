@@ -55,6 +55,12 @@ entries:
       title: kallisto
       url: /kallisto
     - output: web,pdf
+      title: cmdl
+      url: /u00_main_run
+    - output: web,pdf
+      title: cmdkallisto
+      url: /u01_kallisto
+    - output: web,pdf
       title: utils
       url: /utils
     output: web

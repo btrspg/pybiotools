@@ -18,6 +18,8 @@ index = {"Base": "00_base.ipynb",
          "Minimap2": "12_minimap2.ipynb",
          "Gffcompare": "13_gffcompare.ipynb",
          "Kallisto": "14_kallisto.ipynb",
+         "main": "u00_main_run.ipynb",
+         "kallisto_quant_merge": "u01_kallisto.ipynb",
          "load_config": "utils.ipynb",
          "config": "utils.ipynb"}
 
@@ -36,6 +38,8 @@ modules = ["softwares/base.py",
            "softwares/fastq/minimap2.py",
            "softwares/gtf/gffcompare.py",
            "softwares/fastq/kallisto.py",
+           "cmdl.py",
+           "cmdutils/cmdkallisto.py",
            "utils.py"]
 
 doc_url = "https://btrspg.github.io/pybiotools/"

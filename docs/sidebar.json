@@ -16,6 +16,8 @@
     "minimap2": "/minimap2",
     "gffcompare": "/gffcompare",
     "kallisto": "/kallisto",
+    "cmdl": "/u00_main_run",
+    "cmdkallisto": "/u01_kallisto",
     "utils": "/utils"
   }
 }
