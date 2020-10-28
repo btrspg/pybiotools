@@ -55,6 +55,9 @@ entries:
       title: kallisto
       url: /kallisto
     - output: web,pdf
+      title: picard
+      url: /picard
+    - output: web,pdf
       title: cmdl
       url: /u00_main_run
     - output: web,pdf
