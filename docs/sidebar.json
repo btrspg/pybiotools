@@ -16,8 +16,9 @@
     "minimap2": "minimap2.html",
     "gffcompare": "gffcompare.html",
     "kallisto": "kallisto.html",
-    "nanopolish": "nanopolish.html",
+    "picard": "picard.html",
     "nanopolishcomp": "nanopolishcomp.html",
+    "nanopolish": "nanopolish.html",
     "cmdl": "u00_main_run.html",
     "cmdkallisto": "u01_kallisto.html",
     "utils": "utils.html"

@@ -55,11 +55,14 @@ entries:
       title: kallisto
       url: kallisto.html
     - output: web,pdf
-      title: nanopolish
-      url: nanopolish.html
+      title: picard
+      url: picard.html
     - output: web,pdf
       title: nanopolishcomp
       url: nanopolishcomp.html
+    - output: web,pdf
+      title: nanopolish
+      url: nanopolish.html
     - output: web,pdf
       title: cmdl
       url: u00_main_run.html
