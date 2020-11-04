@@ -19,9 +19,8 @@ class Bitk(Base):
             bin = os.path.dirname(software) + '/'
         else:
             bin = ''
-        self._dedim = bin + 'dedim.py'
-        self._fc_rename = bin + 'fc_rename.py'
-        self._merge_fc_deseq2 = bin + 'merge_fc_deseq2.py'
+        self._software = bin + 'pybitk'
+
 
 
     def cmd_version(self):
@@ -30,7 +29,7 @@ class Bitk(Base):
         '''
         return 'echo {repr} ;{software} --version'.format(
             repr=self.__repr__(),
-            software=self._dedim
+            software=self._software
         )
 
     @modify_cmd
@@ -38,14 +37,14 @@ class Bitk(Base):
         '''
         '''
         return r'''
-{software}  {count} {prefix} \
+{software} {dedim_para} {count} {prefix} \
             --annotation {clinical} \
             --size {size} \
             --style {style} \
             -t {title} \
-            {dedim_para}
+
         '''.format(
-            software=self._dedim,
+            software=self._software,
             dedim_para=self._default['dedim'],
             **locals()
         )
@@ -55,24 +54,26 @@ class Bitk(Base):
         '''
         '''
         return r'''
-{software} {fc} {clinical} {prefix} \
+{software} {fc_rename} {fc} {clinical} {prefix} \
         -s {sample_title} \
         -b {bam_title} \
         -c {count_title}
         '''.format(
-            software=self._fc_rename,
+            software=self._software,
+            fc_rename=self._default['fc_rename'],
             **locals()
         )
 
     @modify_cmd
     def cmd_merge_fc_deseq2(self,featurecounts_file,deseq2_file,output,key_in_fc,key_in_deseq2):
         return r'''
- {software} \
+ {software} {merge_fc_deseq2} \
     --key-in-fc '{key_in_fc}' \
     --key-in-deseq2 '{key_in_deseq2}' \
     {featurecounts_file} {deseq2_file} {output}
         '''.format(
-            software=self._merge_fc_deseq2,
+            software=self._software,
+            merge_fc_deseq2=self._default['merge_fc_deseq2'],
             **locals()
         )
 

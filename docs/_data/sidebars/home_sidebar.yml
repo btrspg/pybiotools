@@ -11,58 +11,64 @@ entries:
       url: /
     - output: web,pdf
       title: base
-      url: /base
+      url: base.html
     - output: web,pdf
       title: fastp
-      url: /fastp
+      url: fastp.html
     - output: web,pdf
       title: fastqc
-      url: /fastqc
+      url: fastqc.html
     - output: web,pdf
       title: STAR
-      url: /star
+      url: star.html
     - output: web,pdf
       title: hisat2
-      url: /hisat2
+      url: hisat2.html
     - output: web,pdf
       title: samtools
-      url: /samtools
+      url: samtools.html
     - output: web,pdf
       title: stringtie
-      url: /stringtie
+      url: stringtie.html
     - output: web,pdf
       title: featurecounts
-      url: /featurecounts
+      url: featurecounts.html
     - output: web,pdf
       title: inhouserscript
-      url: /inhouse_rscript
+      url: inhouse_rscript.html
     - output: web,pdf
       title: bitk
-      url: /bitk
+      url: bitk.html
     - output: web,pdf
       title: rnasamba
-      url: /rnasamba
+      url: rnasamba.html
     - output: web,pdf
       title: gffread
-      url: /gffread
+      url: gffread.html
     - output: web,pdf
       title: minimap2
-      url: /minimap2
+      url: minimap2.html
     - output: web,pdf
       title: gffcompare
-      url: /gffcompare
+      url: gffcompare.html
     - output: web,pdf
       title: kallisto
-      url: /kallisto
+      url: kallisto.html
+    - output: web,pdf
+      title: nanopolish
+      url: nanopolish.html
+    - output: web,pdf
+      title: nanopolishcomp
+      url: nanopolishcomp.html
     - output: web,pdf
       title: cmdl
-      url: /u00_main_run
+      url: u00_main_run.html
     - output: web,pdf
       title: cmdkallisto
-      url: /u01_kallisto
+      url: u01_kallisto.html
     - output: web,pdf
       title: utils
-      url: /utils
+      url: utils.html
     output: web
     title: pybiotools
   output: web
