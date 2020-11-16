@@ -24,7 +24,9 @@ index = {"Base": "00_base.ipynb",
          "main": "u00_main_run.ipynb",
          "kallisto_quant_merge": "u01_kallisto.ipynb",
          "load_config": "utils.ipynb",
-         "config": "utils.ipynb"}
+         "config": "utils.ipynb",
+         "load_yaml": "utils.ipynb",
+         "default_yaml": "utils.ipynb"}
 
 modules = ["softwares/base.py",
            "softwares/fastq/fastp.py",
