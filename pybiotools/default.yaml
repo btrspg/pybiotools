@@ -45,7 +45,7 @@ samtools:
   faidx: ' faidx '
 
 stringtie:
-  assemble_transcript: ' -p 16 -e '
+  assemble_transcript: ' -p 16 -e -c 5 '
   merge: ' --merge -m 200 -F 0 -T 0 -p 16 '
 
 featurecounts:
