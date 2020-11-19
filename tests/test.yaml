@@ -1,0 +1,84 @@
+bitk:
+  dedim: ' de_dimensions --dedimensions-method TSNE --cluster-method MiniBatchKMeans
+    --assess-method silhouette_score --dimensions 3 -r '
+  fc_rename: featurecount_rename
+  filter_bam_by_name: filter_bam_by_name
+  merge_fc_deseq2: merge_fc_deseq2
+  polya_length_correlation: polya_length_correlation
+fastp:
+  pe: -c --detect_adapter_for_pe
+  se: ''
+fastqc:
+  default: ' -t 5 '
+featurecounts:
+  default: ' -T 12 -p -t exon -g gene_id -M --ignoreDup --extraAttributes gene_name,gene_biotype '
+gffcompare:
+  default: ' -M -N -T '
+gffread:
+  gtf2fasta: ' -l 100 -U '
+hisat2:
+  align: ' --dta -5 10 -3 10 -p 16 '
+  build_index: ' -p 16 '
+inhouserscript:
+  default: ' '
+kallisto:
+  h5dump: ''
+  index: ' index --make-unique '
+  inspect: ''
+  pseudo: ''
+  quant: ' quant --bias --plaintext --threads 10 --pseudobam '
+minimap2:
+  nonsplice_align: ' -ax map-ont '
+  splice_align: ' -ax splice -uf -k 14 -G 10000 '
+mkdir:
+  default: -p
+nanopolish:
+  call_methylation: 'call-methylation -t 10 '
+  eventalign: ' eventalign -t 10 --samples --print-read-names --scale-events '
+  polya: 'polya -t 10 '
+nanopolishcomp:
+  eventalign_collapse: ' Eventalign_collapse -t 10 '
+picard:
+  buildbamindex: ' BuildBamIndex '
+  markdup: ' MarkDuplicates '
+rnasamba:
+  classify: classify
+  train: ' train -v 3 '
+samtools:
+  faidx: ' faidx '
+  index: ' index '
+  sam2bam: ' view -bSt '
+  sort: ' sort '
+software:
+  bitk: bitk.py
+  fastp: fastp
+  fastqc: fastqc
+  featurecounts: featureCounts
+  fsatp: /path/to/fastp
+  gffcompare: gffcompare
+  gffread: gffread
+  hisat2: hisat2
+  ihr: IHR.R
+  kallisto: kallisto
+  minimap2: minimap2
+  mkdir: mkdir
+  nanopolish: nanopolish
+  nanopolishcomp: NanopolishComp
+  picard: ' picard -Xmx30g -XX:+UseParallelGC -XX:ParallelGCThreads=2 '
+  rnasamba: rnasamba
+  samtools: samtools
+  star: STAR
+  stringtie: stringtie
+star:
+  align: ' --runThreadN 16 --outSAMstrandField intronMotif --readFilesCommand zcat
+    --outSAMtype BAM SortedByCoordinate '
+  build_index: ' --runThreadN 16 --runMode genomeGenerate '
+  mirna_align: ' --alignEndsType EndToEnd \
+      --outFilterMismatchNmax 1 --outFilterMultimapScoreRange \
+      0 --quantMode TranscriptomeSAM GeneCounts --outReadsUnmapped Fastx --outFilterMultimapNmax 10 \
+      --outSAMunmapped Within --outFilterScoreMinOverLread 0 --outFilterMatchNminOverLread 0 \
+      --outFilterMatchNmin 16 --alignSJDBoverhangMin 1000 --alignIntronMax 1 --outWigType
+    wiggle --outWigStrand Stranded --outWigNorm RPM '
+stringtie:
+  assemble_transcript: ' -p 16 -e '
+  merge: ' --merge -m 200 -F 0 -T 0 -p 16 '

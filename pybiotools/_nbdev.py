@@ -23,8 +23,12 @@ index = {"Base": "00_base.ipynb",
          "Nanopolish": "17_nanopolish.ipynb",
          "main": "u00_main_run.ipynb",
          "kallisto_quant_merge": "u01_kallisto.ipynb",
+         "gffcompare_multiple_gtf_tracking": "u02_gffcompare.ipynb",
+         "sample_name_in_tracking": "u02_gffcompare.ipynb",
          "load_config": "utils.ipynb",
-         "config": "utils.ipynb"}
+         "config": "utils.ipynb",
+         "load_yaml": "utils.ipynb",
+         "default_yaml": "utils.ipynb"}
 
 modules = ["softwares/base.py",
            "softwares/fastq/fastp.py",
@@ -46,6 +50,7 @@ modules = ["softwares/base.py",
            "softwares/bam/nanopolish.py",
            "cmdl.py",
            "cmdutils/cmdkallisto.py",
+           "cmdutils/cmdgffcompare.py",
            "utils.py"]
 
 doc_url = "https://btrspg.github.io/pybiotools/"
