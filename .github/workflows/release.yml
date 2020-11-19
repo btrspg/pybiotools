@@ -3,8 +3,6 @@ on:
   release:
     types:
       - published
-      - prereleased
-      - released
 jobs:
   release_to_pypi:
     runs-on: ubuntu-latest
