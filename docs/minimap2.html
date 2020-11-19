@@ -47,7 +47,7 @@ nb_path: "12_minimap2.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="Minimap2" class="doc_header"><code>class</code> <code>Minimap2</code><a href="https://github.com/btrspg/pybiotools/tree/master/pybiotools/softwares/fastq/minimap2.py#L13" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Minimap2</code>(<strong><code>software</code></strong>, <strong><code>fd</code></strong>) :: <a href="/pybiotools/base.html#Base"><code>Base</code></a></p>
+<h2 id="Minimap2" class="doc_header"><code>class</code> <code>Minimap2</code><a href="https://github.com/btrspg/pybiotools4p/tree/master/pybiotools4p/softwares/fastq/minimap2.py#L13" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Minimap2</code>(<strong><code>software</code></strong>, <strong><code>fd</code></strong>) :: <a href="/pybiotools4p/base.html#Base"><code>Base</code></a></p>
 </blockquote>
 
 </div>
@@ -77,9 +77,9 @@ nb_path: "12_minimap2.ipynb"
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">configparser</span>
 
 <span class="n">config</span><span class="o">=</span><span class="n">configparser</span><span class="o">.</span><span class="n">ConfigParser</span><span class="p">()</span>
-<span class="n">config</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s1">&#39;pybiotools/default.ini&#39;</span><span class="p">)</span>
+<span class="n">config</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s1">&#39;pybiotools4p/default.ini&#39;</span><span class="p">)</span>
 
-<span class="kn">from</span> <span class="nn">pybiotools.softwares.bam.samtools</span> <span class="kn">import</span> <span class="n">Samtools</span>
+<span class="kn">from</span> <span class="nn">pybiotools4p.softwares.bam.samtools</span> <span class="kn">import</span> <span class="n">Samtools</span>
 
 <span class="n">samtools</span><span class="o">=</span><span class="n">Samtools</span><span class="p">(</span><span class="s1">&#39;samtools&#39;</span><span class="p">,</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;samtools&#39;</span><span class="p">])</span>
 <span class="n">minimap2</span><span class="o">=</span><span class="n">Minimap2</span><span class="p">(</span><span class="s1">&#39;minimap2&#39;</span><span class="p">,</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;minimap2&#39;</span><span class="p">])</span>

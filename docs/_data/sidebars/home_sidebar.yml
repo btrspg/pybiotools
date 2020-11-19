@@ -76,6 +76,6 @@ entries:
       title: utils
       url: utils.html
     output: web
-    title: pybiotools
+    title: pybiotools4p
   output: web
   title: Sidebar

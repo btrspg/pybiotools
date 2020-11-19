@@ -16,13 +16,13 @@ def load_config(*configs):
     return config
 
 def config(new_config=None):
-    default_config=pkg_resources.resource_filename('pybiotools','default.ini')
+    default_config=pkg_resources.resource_filename('pybiotools4p','default.ini')
     if None is new_config:
         print('loading default_config['+default_config+']')
         return load_config(default_config)
     else:
         print('loading default_config and '+ new_config)
-        return load_config(pkg_resources.resource_filename('pybiotools','default.ini'),new_config)
+        return load_config(pkg_resources.resource_filename('pybiotools4p','default.ini'),new_config)
 
 
 def load_yaml(*yamls):
@@ -33,12 +33,12 @@ def load_yaml(*yamls):
     return my_dict
 
 def default_yaml(new_yaml=None):
-    default_config=pkg_resources.resource_filename('pybiotools','default.yaml')
+    default_config=pkg_resources.resource_filename('pybiotools4p','default.yaml')
     if None is new_yaml:
         print('loading default_config['+default_config+']')
         return load_yaml(default_config)
     else:
         print('loading default_config and '+ new_yaml)
-        return load_yaml(pkg_resources.resource_filename('pybiotools','default.yaml'),new_yaml)
+        return load_yaml(pkg_resources.resource_filename('pybiotools4p','default.yaml'),new_yaml)
 
 

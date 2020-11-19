@@ -47,7 +47,7 @@ nb_path: "05_samtools.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="Samtools" class="doc_header"><code>class</code> <code>Samtools</code><a href="https://github.com/btrspg/pybiotools/tree/master/pybiotools/softwares/bam/samtools.py#L12" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Samtools</code>(<strong><code>software</code></strong>, <strong><code>fd</code></strong>) :: <a href="/pybiotools/base.html#Base"><code>Base</code></a></p>
+<h2 id="Samtools" class="doc_header"><code>class</code> <code>Samtools</code><a href="https://github.com/btrspg/pybiotools4p/tree/master/pybiotools4p/softwares/bam/samtools.py#L12" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Samtools</code>(<strong><code>software</code></strong>, <strong><code>fd</code></strong>) :: <a href="/pybiotools4p/base.html#Base"><code>Base</code></a></p>
 </blockquote>
 
 </div>
@@ -99,7 +99,7 @@ nb_path: "05_samtools.ipynb"
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">configparser</span>
 
 <span class="n">config</span><span class="o">=</span><span class="n">configparser</span><span class="o">.</span><span class="n">ConfigParser</span><span class="p">()</span>
-<span class="n">config</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s1">&#39;pybiotools/default.ini&#39;</span><span class="p">)</span>
+<span class="n">config</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s1">&#39;pybiotools4p/default.ini&#39;</span><span class="p">)</span>
 
 <span class="n">samtools</span><span class="o">=</span><span class="n">Samtools</span><span class="p">(</span><span class="s1">&#39;samtools&#39;</span><span class="p">,</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;samtools&#39;</span><span class="p">])</span>
 <span class="n">samtools</span>
@@ -198,9 +198,7 @@ nb_path: "05_samtools.ipynb"
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>
-samtools faidx biology-test-data/fasta/Homo_sapiens.GRCh38.dna.primary_assembly.chromosome22.fa       
-        
+<pre>samtools faidx biology-test-data/fasta/Homo_sapiens.GRCh38.dna.primary_assembly.chromosome22.fa
 </pre>
 </div>
 </div>
@@ -231,9 +229,7 @@ samtools faidx biology-test-data/fasta/Homo_sapiens.GRCh38.dna.primary_assembly.
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>
-samtools view -bSt biology-test-data/fasta/Homo_sapiens.GRCh38.dna.primary_assembly.chromosome22.fa.fai biology-test-data/bam/HS.22_1_18000000.Raw.sam -o ./pybiotools/HS.22_1_18000000.bam
-            
+<pre>samtools view -bSt biology-test-data/fasta/Homo_sapiens.GRCh38.dna.primary_assembly.chromosome22.fa.fai biology-test-data/bam/HS.22_1_18000000.Raw.sam -o ./pybiotools/HS.22_1_18000000.bam
 </pre>
 </div>
 </div>
@@ -264,9 +260,7 @@ samtools view -bSt biology-test-data/fasta/Homo_sapiens.GRCh38.dna.primary_assem
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>
-samtools sort ./pybiotools/HS.22_1_18000000.bam -o ./pybiotools/HS.22_1_18000000_sort.bam        
-        
+<pre>samtools sort ./pybiotools/HS.22_1_18000000.bam -o ./pybiotools/HS.22_1_18000000_sort.bam
 </pre>
 </div>
 </div>
@@ -297,9 +291,7 @@ samtools sort ./pybiotools/HS.22_1_18000000.bam -o ./pybiotools/HS.22_1_18000000
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>
-samtools index ./pybiotools/HS.22_1_18000000_sort.bam        
-            
+<pre>samtools index ./pybiotools/HS.22_1_18000000_sort.bam
 </pre>
 </div>
 </div>

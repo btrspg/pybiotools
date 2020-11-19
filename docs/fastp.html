@@ -47,7 +47,7 @@ nb_path: "01_fastp.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="Fastp" class="doc_header"><code>class</code> <code>Fastp</code><a href="https://github.com/btrspg/pybiotools/tree/master/pybiotools/softwares/fastq/fastp.py#L11" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Fastp</code>(<strong><code>software</code></strong>, <strong><code>fd</code></strong>) :: <a href="/pybiotools/base.html#Base"><code>Base</code></a></p>
+<h2 id="Fastp" class="doc_header"><code>class</code> <code>Fastp</code><a href="https://github.com/btrspg/pybiotools4p/tree/master/pybiotools4p/softwares/fastq/fastp.py#L11" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Fastp</code>(<strong><code>software</code></strong>, <strong><code>fd</code></strong>) :: <a href="/pybiotools4p/base.html#Base"><code>Base</code></a></p>
 </blockquote>
 
 </div>
@@ -77,7 +77,7 @@ nb_path: "01_fastp.ipynb"
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">configparser</span>
 
 <span class="n">config</span><span class="o">=</span><span class="n">configparser</span><span class="o">.</span><span class="n">ConfigParser</span><span class="p">()</span>
-<span class="n">config</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s1">&#39;pybiotools/default.ini&#39;</span><span class="p">)</span>
+<span class="n">config</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s1">&#39;pybiotools4p/default.ini&#39;</span><span class="p">)</span>
 
 <span class="n">fastp</span><span class="o">=</span><span class="n">Fastp</span><span class="p">(</span><span class="s1">&#39;fastp&#39;</span><span class="p">,</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;fastp&#39;</span><span class="p">])</span>
 <span class="n">fastp</span>
@@ -194,15 +194,13 @@ nb_path: "01_fastp.ipynb"
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>
-fastp pe \
+<pre>fastp -c --detect_adapter_for_pe \
         -i ./biology-test-data/fastq/HS.22.r1.fq.gz \
         -I ./biology-test-data/fastq/HS.22.r2.fq.gz \
         -o ./pybiotools/HS_22_clean_r1.fq.gz \
         -O ./pybiotools/HS_22_clean_r2.fq.gz \
         --html ./pybiotools/HS_22.fastp.html \
-        --json ./pybiotools/HS_22.fastp.json 
-            
+        --json ./pybiotools/HS_22.fastp.json
 </pre>
 </div>
 </div>
@@ -235,13 +233,11 @@ fastp pe \
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>
-fastp se \
+<pre>fastp  \
         -i ./biology-test-data/fastq/HS.22.r1.fq.gz \
         -o ./pybiotools/HS_22_se_clean_r1.fq.gz \
         --html ./pybiotools/HS_22se.fastp.html \
-        --json ./pybiotools/HS_22se.fastp.json 
-            
+        --json ./pybiotools/HS_22se.fastp.json
 </pre>
 </div>
 </div>

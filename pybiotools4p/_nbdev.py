@@ -53,8 +53,8 @@ modules = ["softwares/base.py",
            "cmdutils/cmdgffcompare.py",
            "utils.py"]
 
-doc_url = "https://btrspg.github.io/pybiotools/"
+doc_url = "https://btrspg.github.io/pybiotools4p/"
 
-git_url = "https://github.com/btrspg/pybiotools/tree/master/"
+git_url = "https://github.com/btrspg/pybiotools4p/tree/master/"
 
 def custom_doc_links(name): return None
