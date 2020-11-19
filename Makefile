@@ -1,10 +1,10 @@
 SRC = $(wildcard ./*.ipynb)
 
-all: pybiotools docs
+all: pybiotools4p docs
 
-pybiotools: $(SRC)
+pybiotools4p: $(SRC)
 	nbdev_build_lib
-	touch pybiotools
+	touch pybiotools4p
 
 sync:
 	nbdev_update_lib
