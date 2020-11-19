@@ -21,6 +21,7 @@
     "nanopolish": "nanopolish.html",
     "cmdl": "u00_main_run.html",
     "cmdkallisto": "u01_kallisto.html",
+    "cmdgffcompare": "u02_gffcompare.html",
     "utils": "utils.html"
   }
 }

@@ -7,11 +7,13 @@ __all__ = ['main']
 import defopt
 
 from .cmdutils.cmdkallisto import kallisto_quant_merge
+from .cmdutils.cmdgffcompare import gffcompare_multiple_gtf_tracking
 
 # Cell
 
 def main():
     cmdlfs = [
         kallisto_quant_merge,
+        gffcompare_multiple_gtf_tracking,
     ]
     defopt.run(cmdlfs)

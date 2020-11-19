@@ -69,7 +69,7 @@ gffread:
   gtf2fasta: ' -l 100 -U '
 
 minimap2:
-  splice_align: ' -ax splice -uf -k 14 -G 10000 '
+  splice_align: ' -ax splice --cs=long -uf -k 14 -G 10000 '
   nonsplice_align: ' -ax map-ont '
 
 gffcompare:
