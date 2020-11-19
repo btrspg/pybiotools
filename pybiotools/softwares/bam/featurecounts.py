@@ -4,7 +4,7 @@ __all__ = ['Featurecounts']
 
 # Cell
 
-from ...base import Base,modify_cmd
+from ..base import Base, modify_cmd
 
 # Cell
 

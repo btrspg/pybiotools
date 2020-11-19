@@ -4,7 +4,7 @@ __all__ = ['Stringtie']
 
 # Cell
 
-from ...base import Base,modify_cmd
+from ..base import Base, modify_cmd
 
 # Cell
 
@@ -67,8 +67,7 @@ class Stringtie(Base):
     '''.format(
             stringtie=self._software,
             gtfs=gtfs if isinstance(gtfs, str) else ' '.join(gtfs),
-            merge_paras=self._default.merge,
-            nt=self._default.nt if None is nt else nt,
+            merge_paras=self._default['merge'],
             output=output,
             tag=tag
 
