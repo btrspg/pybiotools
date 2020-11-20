@@ -98,4 +98,4 @@ picard:
   
 2passtools:
   score: ' score --stranded '
-  filter: " --exprs 'decision_tree_2_pred' --exprs 'jad>3' --exprs 'decision_tree_1_pred' --exprs 'count>4' "
+  filter:  filter --exprs 'decision_tree_2_pred' --exprs 'jad>3' --exprs 'decision_tree_1_pred' --exprs 'count>4'
