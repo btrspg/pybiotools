@@ -64,6 +64,9 @@ entries:
       title: nanopolish
       url: nanopolish.html
     - output: web,pdf
+      title: 2passtools
+      url: 2passtools.html
+    - output: web,pdf
       title: cmdl
       url: u00_main_run.html
     - output: web,pdf

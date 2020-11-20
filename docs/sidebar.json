@@ -19,6 +19,7 @@
     "picard": "picard.html",
     "nanopolishcomp": "nanopolishcomp.html",
     "nanopolish": "nanopolish.html",
+    "2passtools": "2passtools.html",
     "cmdl": "u00_main_run.html",
     "cmdkallisto": "u01_kallisto.html",
     "cmdgffcompare": "u02_gffcompare.html",
