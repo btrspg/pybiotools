@@ -20,7 +20,7 @@ test:
 	nbdev_test_nbs
 
 release: pypi
-	nbdev_bump_version
+	echo nbdev_bump_version
 
 pypi: dist
 	twine upload --repository pypi dist/*
