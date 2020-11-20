@@ -5,7 +5,7 @@ __all__ = ['Minimap2']
 # Cell
 
 from ..base import Base, modify_cmd
-
+from ...utils import dict_to_paras
 
 
 # Cell
@@ -26,10 +26,10 @@ class Minimap2(Base):
         )
 
     @modify_cmd
-    def cmd_splice_align(self,reference,fastq,samtools,samtools_idx,outbam):
+    def cmd_splice_align(self,reference,fastq,samtools,samtools_idx,outbam,ext_paras={}):
 
         return r'''
-{software} {splice_align} -a {reference} {fastq} | {samtools_sam2bam} | {samtools_sort}
+{software} {splice_align} {ext_p} -a {reference} {fastq} | {samtools_sam2bam} | {samtools_sort}
 {samtools_index}
         '''.format(
             software=self._software,
@@ -37,14 +37,15 @@ class Minimap2(Base):
             samtools_sam2bam=samtools.cmd_sam2bam(samtools_idx, '-', bamfile=None),
             samtools_sort=samtools.cmd_sort('-', sortbam=outbam),
             samtools_index=samtools.cmd_index(outbam),
+            ext_p=dict_to_paras(ext_paras),
             **locals()
         )
 
     @modify_cmd
-    def cmd_nonsplice_align(self,reference,fastq,samtools,samtools_idx,outbam):
+    def cmd_nonsplice_align(self,reference,fastq,samtools,samtools_idx,outbam,ext_paras={}):
 
         return r'''
-{software} {nonsplice_align} -a {reference} {fastq} | {samtools_sam2bam} | {samtools_sort}
+{software} {nonsplice_align} {ext_p} -a {reference} {fastq} | {samtools_sam2bam} | {samtools_sort}
 {samtools_index}
         '''.format(
             software=self._software,
@@ -52,6 +53,7 @@ class Minimap2(Base):
             samtools_sam2bam=samtools.cmd_sam2bam(samtools_idx, '-', bamfile=None),
             samtools_sort=samtools.cmd_sort('-', sortbam=outbam),
             samtools_index=samtools.cmd_index(outbam),
+            ext_p=dict_to_paras(ext_paras),
             **locals()
         )
 

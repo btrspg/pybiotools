@@ -28,7 +28,8 @@ index = {"Base": "00_base.ipynb",
          "load_config": "utils.ipynb",
          "config": "utils.ipynb",
          "load_yaml": "utils.ipynb",
-         "default_yaml": "utils.ipynb"}
+         "default_yaml": "utils.ipynb",
+         "dict_to_paras": "utils.ipynb"}
 
 modules = ["softwares/base.py",
            "softwares/fastq/fastp.py",

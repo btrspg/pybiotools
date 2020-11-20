@@ -119,7 +119,7 @@ nb_path: "12_minimap2.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">minimap2</span><span class="o">.</span><span class="n">cmd_splice_align</span><span class="p">(</span><span class="n">reference</span><span class="p">,</span><span class="n">fastq</span><span class="p">,</span><span class="n">samtools</span><span class="p">,</span><span class="n">samtools_idx</span><span class="p">,</span><span class="n">outbam</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">minimap2</span><span class="o">.</span><span class="n">cmd_splice_align</span><span class="p">(</span><span class="n">reference</span><span class="p">,</span><span class="n">fastq</span><span class="p">,</span><span class="n">samtools</span><span class="p">,</span><span class="n">samtools_idx</span><span class="p">,</span><span class="n">outbam</span><span class="p">,{</span><span class="s1">&#39;--junbed&#39;</span><span class="p">:</span><span class="s1">&#39;abc.bed&#39;</span><span class="p">}))</span>
 </pre></div>
 
     </div>
@@ -132,7 +132,7 @@ nb_path: "12_minimap2.ipynb"
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>minimap2 -ax splice -uf -k 14 -G 10000 -a biology-test-data/fasta/Homo_sapiens.GRCh38.dna.primary_assembly.chromosome22.fa /path/to/fastq | samtools view -bSt biology-test-data/fasta/Homo_sapiens.GRCh38.dna.primary_assembly.chromosome22.fa.fai - | samtools sort - -o /path/to/bam 
+<pre>minimap2 -ax splice -uf -k 14 -G 10000 --junbed abc.bed -a biology-test-data/fasta/Homo_sapiens.GRCh38.dna.primary_assembly.chromosome22.fa /path/to/fastq | samtools view -bSt biology-test-data/fasta/Homo_sapiens.GRCh38.dna.primary_assembly.chromosome22.fa.fai - | samtools sort - -o /path/to/bam 
 samtools index /path/to/bam
 </pre>
 </div>
