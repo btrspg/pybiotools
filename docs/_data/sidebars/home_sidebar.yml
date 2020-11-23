@@ -11,73 +11,73 @@ entries:
       url: /
     - output: web,pdf
       title: base
-      url: base.html
+      url: /base
     - output: web,pdf
       title: fastp
-      url: fastp.html
+      url: /fastp
     - output: web,pdf
       title: fastqc
-      url: fastqc.html
+      url: /fastqc
     - output: web,pdf
       title: STAR
-      url: star.html
+      url: /star
     - output: web,pdf
       title: hisat2
-      url: hisat2.html
+      url: /hisat2
     - output: web,pdf
       title: samtools
-      url: samtools.html
+      url: /samtools
     - output: web,pdf
       title: stringtie
-      url: stringtie.html
+      url: /stringtie
     - output: web,pdf
       title: featurecounts
-      url: featurecounts.html
+      url: /featurecounts
     - output: web,pdf
       title: inhouserscript
-      url: inhouse_rscript.html
+      url: /inhouse_rscript
     - output: web,pdf
       title: bitk
-      url: bitk.html
+      url: /bitk
     - output: web,pdf
       title: rnasamba
-      url: rnasamba.html
+      url: /rnasamba
     - output: web,pdf
       title: gffread
-      url: gffread.html
+      url: /gffread
     - output: web,pdf
       title: minimap2
-      url: minimap2.html
+      url: /minimap2
     - output: web,pdf
       title: gffcompare
-      url: gffcompare.html
+      url: /gffcompare
     - output: web,pdf
       title: kallisto
-      url: kallisto.html
+      url: /kallisto
     - output: web,pdf
       title: picard
-      url: picard.html
+      url: /picard
     - output: web,pdf
       title: nanopolishcomp
-      url: nanopolishcomp.html
+      url: /nanopolishcomp
     - output: web,pdf
       title: nanopolish
-      url: nanopolish.html
+      url: /nanopolish
     - output: web,pdf
       title: 2passtools
-      url: 2passtools.html
+      url: /2passtools
     - output: web,pdf
       title: cmdl
-      url: u00_main_run.html
+      url: /u00_main_run
     - output: web,pdf
       title: cmdkallisto
-      url: u01_kallisto.html
+      url: /u01_kallisto
     - output: web,pdf
       title: cmdgffcompare
-      url: u02_gffcompare.html
+      url: /u02_gffcompare
     - output: web,pdf
       title: utils
-      url: utils.html
+      url: /utils
     output: web
     title: pybiotools4p
   output: web
