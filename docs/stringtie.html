@@ -47,7 +47,7 @@ nb_path: "06_stringtie.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h2 id="Stringtie" class="doc_header"><code>class</code> <code>Stringtie</code><a href="https://github.com/btrspg/pybiotools4p/tree/master/pybiotools4p/softwares/bam/stringtie.py#L11" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Stringtie</code>(<strong><code>software</code></strong>, <strong><code>fd</code></strong>) :: <a href="/pybiotools4p/base.html#Base"><code>Base</code></a></p>
+<h2 id="Stringtie" class="doc_header"><code>class</code> <code>Stringtie</code><a href="https://github.com/btrspg/pybiotools4p/tree/master/pybiotools4p/softwares/bam/stringtie.py#L12" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Stringtie</code>(<strong><code>software</code></strong>, <strong><code>fd</code></strong>) :: <a href="/pybiotools4p/base.html#Base"><code>Base</code></a></p>
 </blockquote>
 
 </div>
@@ -172,7 +172,7 @@ nb_path: "06_stringtie.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">stringtie</span><span class="o">.</span><span class="n">cmd_assemble_transcript</span><span class="p">(</span><span class="n">bams</span><span class="p">,</span> <span class="n">outgtf</span><span class="p">,</span> <span class="n">abundance</span><span class="p">,</span><span class="n">gtf_file</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">stringtie</span><span class="o">.</span><span class="n">cmd_assemble_transcript</span><span class="p">(</span><span class="n">bams</span><span class="p">,</span> <span class="n">outgtf</span><span class="p">,</span> <span class="n">abundance</span><span class="p">,</span><span class="n">gtf_file</span><span class="p">,{</span><span class="s1">&#39;-L&#39;</span><span class="p">:</span> <span class="s1">&#39;&#39;</span><span class="p">}))</span>
 </pre></div>
 
     </div>
@@ -185,7 +185,7 @@ nb_path: "06_stringtie.ipynb"
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>stringtie -p 16 -e \
+<pre>stringtie -p 16 -e -L  \
             -o ./pybiotools/stringtie.gtf \
             -G biology-test-data/gtf/HS.22.gtf \
             -A ./pybiotools/stringtie.txt \

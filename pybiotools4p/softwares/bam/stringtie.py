@@ -5,6 +5,7 @@ __all__ = ['Stringtie']
 # Cell
 
 from ..base import Base, modify_cmd
+from ...utils import dict_to_paras
 
 # Cell
 
@@ -23,16 +24,17 @@ class Stringtie(Base):
         )
 
     @modify_cmd
-    def cmd_assemble_transcript(self, bams, outgtf, abundance,annogtf):
+    def cmd_assemble_transcript(self, bams, outgtf, abundance,annogtf,ext_paras={}):
         '''
         :param bams:
         :param outgtf:
         :param abundance:
         :param annogtf:
+        :param ext_paras:
         :return:
         '''
         return r'''
-{stringtie} {assemble_transcript} \
+{stringtie} {assemble_transcript} {ext_p} \
             -o {outgtf} \
             -G {annogtf} \
             -A {abundance} \
@@ -43,17 +45,18 @@ class Stringtie(Base):
             assemble_transcript=self._default['assemble_transcript'],
             outgtf=outgtf,
             annogtf=annogtf,
-            abundance=abundance
+            abundance=abundance,
+            ext_p=dict_to_paras(ext_paras)
 
         )
 
     @modify_cmd
-    def cmd_merge_gtf(self, gtfs, output, tag=None):
+    def cmd_merge_gtf(self, gtfs, output, tag=None,ext_paras={}):
         '''
         :param gtfs:
         :param output:
         :param tag:
-        :param nt:
+        :param ext_paras:
         :return:
         '''
         if tag is None:
@@ -61,7 +64,7 @@ class Stringtie(Base):
         else:
             tag = ' -l ' + tag
         return r'''
-{stringtie} {merge_paras} {tag} \
+{stringtie} {merge_paras} {ext_p} {tag} \
     -o {output} \
     {gtfs}
     '''.format(
@@ -69,7 +72,8 @@ class Stringtie(Base):
             gtfs=gtfs if isinstance(gtfs, str) else ' '.join(gtfs),
             merge_paras=self._default['merge'],
             output=output,
-            tag=tag
+            tag=tag,
+            ext_p=dict_to_paras(ext_paras)
 
         )
 
