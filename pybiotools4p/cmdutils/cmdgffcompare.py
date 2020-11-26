@@ -37,7 +37,7 @@ def gffcompare_multiple_gtf_tracking(tracking_file,outdir,*,names=None,split=Tru
             new_tag[tag]+=1
             tag_name = f'{tag}_{new_tag[tag]}'
             sample_infos = cells[4:]
-            nt_ot[tag_name]=' '.join(cells[:3])
+            nt_ot[cells[0]]=' '.join(cells[1:3]+[tag_name])
             for si in sample_infos:
                 if si != '-':
                     name=sample_name_in_tracking(si.split(':')[0],names)
