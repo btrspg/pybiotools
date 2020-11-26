@@ -43,7 +43,7 @@ def gffcompare_multiple_gtf_tracking(tracking_file,outdir,*,names=None,split=Tru
                     name=sample_name_in_tracking(si.split(':')[0],names)
                     records.setdefault(name,{})
                     records[name].setdefault(tag,[])
-                    records[name][tag].append(tag_name)
+                    records[name][tag].append(cells[0])
 
             line=tr.readline()
     for sample in records:
